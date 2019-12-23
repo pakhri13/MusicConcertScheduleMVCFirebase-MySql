@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Here"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:fontFamily="@font/mifnight"
+        android:textColor="#fff"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_email_text_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_email_text_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:counterEnabled="true"
+        android:orientation="vertical"
+        app:errorEnabled="true"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_password_text_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:ems="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password_text_input"
+        app:counterEnabled="true"
+        android:orientation="vertical"
+        app:errorEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:ems="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password_conf__text_input"
+        app:counterEnabled="true"
+        android:orientation="vertical"
+        app:errorEnabled="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_text_input"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_conf_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:fontFamily="serif"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:ems="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_registerasi"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:fontFamily="serif"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_conf__text_input"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_to_login"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:text="Already Have an Account ? Login Here"
+        android:fontFamily="@font/mifnight"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_registerasi"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

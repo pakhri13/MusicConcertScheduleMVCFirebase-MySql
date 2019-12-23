@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbardalem"
+        android:background="#192943">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concert Details"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:fontFamily="serif"/>
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+            <ImageView
+                    android:id="@+id/imgItem"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo2"
+            />
+
+            <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:padding="15dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Judul"
+                    android:textColor="#000"
+
+            />
+
+
+            <TextView
+                    android:id="@+id/tvTempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEMPAT"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="#0C0C0C"
+                    android:layout_toRightOf="@+id/imgItem"
+                    android:layout_below="@+id/tvNama"
+            />
+            <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="TANGGAL"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="18dp"
+                    android:textSize="15dp"
+                    android:maxEms="2000"
+                    android:textColor="#0C0C0C"
+                    android:layout_toRightOf="@+id/imgItem"
+                    android:layout_below="@+id/tvTempat"
+            />
+            <TextView
+                    android:id="@+id/tvJam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="JAM"
+                    android:textSize="15dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="#0C0C0C"
+                    android:layout_toRightOf="@+id/imgItem"
+                    android:layout_below="@+id/tvTanggal"
+            />
+            <Button android:layout_width="300dp"
+                    android:layout_height="67dp"
+                    android:id="@+id/btn_back"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tvJam"
+                    android:text="Back"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:background="@drawable/rad"
+            />
+
+
+</LinearLayout>

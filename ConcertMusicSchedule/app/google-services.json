@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "541435311100",
+    "firebase_url": "https://musicconcert-5db8a.firebaseio.com",
+    "project_id": "musicconcert-5db8a",
+    "storage_bucket": "musicconcert-5db8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541435311100:android:d8f78e74797f7ac1b73879",
+        "android_client_info": {
+          "package_name": "com.wildnet.tugaskelompok2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541435311100-oq3lc0vreepmo2e0eim9flr8j8on6d5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wildnet.tugaskelompok2",
+            "certificate_hash": "52019e0f8cec9db708895dc419e6213a819548d8"
+          }
+        },
+        {
+          "client_id": "541435311100-54hemnhsbniic2k7ubp9eonruppm26bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA75zL0tMT6tW_ODD6oTem4exC7guTjtAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541435311100-54hemnhsbniic2k7ubp9eonruppm26bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

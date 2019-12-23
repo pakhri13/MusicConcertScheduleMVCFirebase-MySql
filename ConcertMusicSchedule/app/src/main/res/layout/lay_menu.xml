@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/scrol"
+            android:layout_height="match_parent">
+<RelativeLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbardalem"
+        android:background="#192943">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concert Schedule"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:fontFamily="serif"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/btnLogout"
+                android:backgroundTint="#000"
+                android:src="@drawable/ic_exit_to_app_black_24dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/toolbardalem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+            android:layout_below="@+id/toolbardalem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+
+
+</ScrollView>
